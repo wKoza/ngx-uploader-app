@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import {
-    DropTargetOptions, NgxUploadModule
+  DropTargetOptions, HttpClientUploadService, NgxUploadModule
 } from '@wkoza/ngx-upload';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -48,6 +48,9 @@ export const ngxDropTargetOptions: DropTargetOptions = {
         MatCardModule,
         MatProgressBarModule,
         MatInputModule
+    ],
+  providers: [
+    HttpClientUploadService
     ],
 
     bootstrap: [AppComponent]
