@@ -49,10 +49,6 @@ export const ngxDropTargetOptions: DropTargetOptions = {
         MatProgressBarModule,
         MatInputModule
     ],
-  providers: [
-    HttpClientUploadService
-    ],
-
     bootstrap: [AppComponent]
 })
 export class AppModule {
