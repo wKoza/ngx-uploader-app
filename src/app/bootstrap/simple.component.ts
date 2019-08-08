@@ -19,7 +19,7 @@ export class SimpleBootstrapComponent implements OnInit {
 
   model: Person;
 
-  @ViewChild('ourForm', {static: true}) ourForm;
+  @ViewChild('ourForm') ourForm;
 
   optionsInput: InputFileOptions = {
     multiple: true,

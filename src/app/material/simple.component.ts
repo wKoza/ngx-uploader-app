@@ -19,7 +19,7 @@ export class SimpleMaterialComponent implements OnInit {
 
   model: Person;
 
-  @ViewChild('ourForm', {static: true}) ourForm;
+  @ViewChild('ourForm') ourForm;
 
   optionsDrop: DropTargetOptions = {
     color: 'dropZoneColorMaterial',
