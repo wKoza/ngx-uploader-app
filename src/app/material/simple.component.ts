@@ -11,7 +11,7 @@ import {
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-material',
   templateUrl: './simple.component.html',
   styleUrls: ['./simple.component.css']
 })

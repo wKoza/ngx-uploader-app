@@ -11,11 +11,12 @@ import {
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-bootstrap',
   templateUrl: './simple.component.html',
   styleUrls: ['./simple.component.css']
 })
 export class SimpleBootstrapComponent implements OnInit {
+
 
   model: Person;
 
@@ -112,6 +113,4 @@ export class SimpleBootstrapComponent implements OnInit {
   activeCancelAllBtn(): boolean {
     return this.uploader.queue.some((item: FileItem) => item.uploadInProgress);
   }
-
-
 }
