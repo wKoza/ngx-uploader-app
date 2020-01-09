@@ -24,7 +24,7 @@ export class SimpleBootstrapComponent implements OnInit {
 
   optionsInput: InputFileOptions = {
     multiple: true,
-    accept: [MineTypeEnum.Image, MineTypeEnum.Application_Pdf],
+    accept: [MineTypeEnum.All],
     disableMultipart: false
   };
 
