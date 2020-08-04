@@ -73,9 +73,9 @@
                         </thead>
                         <tbody>
                         <tr *ngFor="let itemFile of uploader.queue"
-                            [ngClass]="{'table-success' : itemFile.isSuccess, 'table-danger' : itemFile.isError }">
+                            [ngClass]="{'table-success' : itemFile.isSuccess, 'table-danger' : itemFile.isError }" style="height: 150px">
                             <td>
-                                <div [ngxThumbnail]="itemFile"></div>
+                                <div [ngxThumbnail]="itemFile" ></div>
                                 <div style="text-align: center">name: {{ itemFile.formData.get('name') }}</div>
                             </td>
                             <td style="padding-left: 10px;">{{ itemFile.file.name }}</td>
