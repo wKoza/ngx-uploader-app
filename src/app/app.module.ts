@@ -7,6 +7,7 @@ import {
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
     {path: '', redirectTo: 'simple-material', pathMatch: 'full'},
@@ -26,6 +27,7 @@ export const ngxDropTargetOptions: DropTargetOptions = {
     ],
     imports: [
       BrowserModule,
+      HttpClientModule,
       BrowserAnimationsModule,
       RouterModule.forRoot(routes),
       NgxUploadModule.forRoot(ngxDropTargetOptions)
